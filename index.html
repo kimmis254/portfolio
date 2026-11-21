@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wayne Kathanzu, Software Engineer</title>
+<meta name="description" content="Full-stack software engineer building mobile apps, web apps and AWS-hosted backends. Based in Nairobi.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230E1530'/><text x='16' y='22' text-anchor='middle' fill='white' font-family='system-ui,sans-serif' font-weight='800' font-size='14'>WK</text></svg>">
+<meta property="og:title" content="Wayne Kathanzu — Software Engineer">
+<meta property="og:description" content="Full-stack software engineer building mobile apps, web apps and AWS-hosted backends. Based in Nairobi.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="loader" aria-hidden="true"><b>WK</b><div class="lb"><i></i></div></div>
+<div id="bar"></div>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top"><span>WK</span>Wayne Kathanzu</a>
+    <nav id="nav" aria-label="Primary"><a href="#work">Work</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <b class="sh s1" style="--p:40" aria-hidden="true"><i></i></b>
+  <b class="sh s2" style="--p:-30;--dl:-3s" aria-hidden="true"><i></i></b>
+  <b class="sh s3" style="--p:60;--dl:-5s" aria-hidden="true"><i></i></b>
+  <b class="sh s4" style="--p:-50;--dl:-2s" aria-hidden="true"><i></i></b>
+  <b class="sh s5" style="--p:35;--dl:-6s" aria-hidden="true"><i></i></b>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <h1 aria-label="Wayne Kathanzu"><span class="w"><span style="--i:0">Wayne</span></span> <span class="w"><span style="--i:1">Kathanzu</span></span></h1>
+        <p class="headline rv" style="--d:.45s">Full-stack software engineer building mobile apps, web apps and AWS-hosted backends.</p>
+        <p class="sub rv" style="--d:.55s">I build mobile apps with Flutter and Kotlin, web apps with React, Next.js and TypeScript, and backends in Python, all deployed on AWS with Docker. Computer Science graduate from the University of Nairobi.</p>
+        <div class="cta rv" style="--d:.65s">
+          <a class="btn primary" data-mag href="/Wayne_Kathanzu_CV.pdf" download>Download resume (PDF)</a>
+          <a class="btn" data-mag href="https://github.com/kimmis254" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" data-mag href="https://www.linkedin.com/in/wayne-kathanzu" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="rv" style="--d:.5s">
+        <figure class="photo" data-tilt>
+          <div class="ph"><img src="images/kimpass.jpg" alt="Portrait of Wayne Kathanzu" width="300" height="375" loading="lazy" onerror="this.remove()"></div>
+          <figcaption class="cap"><i></i>Based in Nairobi</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="facts rv" style="--d:.8s">
+      <span><b>Now:</b> Software Engineer, Rastuc Technologies</span>
+      <span><b>Based in:</b> Nairobi, Kenya</span>
+      <span><b>Degree:</b> BSc Computer Science, Second Class Honours (Upper)</span>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2 class="rv">Selected work</h2>
+    <p class="lede rv" style="--d:.08s">Production systems I've built end-to-end, and the engineering decisions behind each one.</p>
+
+    <article class="case rv" style="--c:var(--red)">
+      <div>
+        <h3>Rastuc Technologies — full-stack clinical platform</h3>
+        <div class="stats-grid">
+          <div class="stat"><span class="stat-num">~45%</span><span class="stat-label">smaller API payloads via typed GraphQL resolvers</span></div>
+          <div class="stat"><span class="stat-num">&lt; 180 ms</span><span class="stat-label">average query response time</span></div>
+          <div class="stat"><span class="stat-num">15+</span><span class="stat-label">core clinical screens shipped</span></div>
+          <div class="stat"><span class="stat-num">&lt; 1.2 s</span><span class="stat-label">view load on unstable 3G/4G</span></div>
+        </div>
+      </div>
+      <div>
+        <figure class="devices" data-tilt>
+          <div class="phone"><div class="screen"><img src="images/rastuc1.jpeg" alt="Rastuc clinical app home screen" loading="lazy" onerror="this.remove()"></div></div>
+          <div class="phone p2"><div class="screen"><img src="images/rastuc2.jpeg" alt="Rastuc health providers listing" loading="lazy" onerror="this.remove()"></div></div>
+        </figure>
+        <dl>
+          <dt>Role</dt><dd>Full-Stack &amp; Mobile Engineer (Flutter / GraphQL)</dd>
+          <dt>Problem</dt><dd>Clinicians need reliable patient data entry where connectivity is unreliable, across three distinct user roles — patients, practitioners and clinic administrators.</dd>
+          <dt>What I built</dt><dd>Built and maintained 15+ core clinical screens in Flutter alongside backing GraphQL queries, mutations and relational schemas. Replaced over-fetching REST patterns with typed resolvers, cutting mobile payloads by ~40–55%. Implemented local caching and reactive state sync so critical views load in under 1.2 s even on unstable 3G/4G connections. Engineered unified role-based views across 3 user types covering appointments, medical passports and billing.</dd>
+        </dl>
+        <div class="tags"><span class="tag">Flutter</span><span class="tag">Kotlin</span><span class="tag">GraphQL</span><span class="tag">SQLite</span><span class="tag">Offline-first</span></div>
+      </div>
+    </article>
+
+    <article class="case rv" style="--c:var(--teal)">
+      <div>
+        <h3>MkulimaHub — solo full-stack &amp; ML build</h3>
+        <div class="stats-grid">
+          <div class="stat"><span class="stat-num">100%</span><span class="stat-label">solo build — UI, API, DB, ML &amp; payments</span></div>
+          <div class="stat"><span class="stat-num">&lt; 150 ms</span><span class="stat-label">PostGIS + DBSCAN spatial matching</span></div>
+          <div class="stat"><span class="stat-num">10+</span><span class="stat-label">crops modeled with Prophet forecasts</span></div>
+          <div class="stat"><span class="stat-num">100%</span><span class="stat-label">automated M-Pesa ledger reconciliation</span></div>
+        </div>
+      </div>
+      <div>
+        <figure class="devices" data-tilt>
+          <div class="phone"><div class="screen"><img src="images/mkulimahub1.jpeg" alt="MkulimaHub farmer dashboard" loading="lazy" onerror="this.remove()"></div></div>
+          <div class="phone p2"><div class="screen"><img src="images/mkulimahub2.jpeg" alt="MkulimaHub squad tracker" loading="lazy" onerror="this.remove()"></div></div>
+        </figure>
+        <dl>
+          <dt>Role</dt><dd>Solo Architect (Flutter / FastAPI / ML) — final-year project</dd>
+          <dt>Problem</dt><dd>Smallholder farmers need market access and price forecasts in one place, but existing tools are fragmented and don't serve rural areas.</dd>
+          <dt>What I built</dt><dd>Designed and deployed the entire stack solo: Flutter mobile client, FastAPI backend, PostgreSQL/PostGIS spatial database and ML inference services on AWS EC2 with Docker and Nginx. Indexed regional produce listings and farmer clusters using PostGIS spatial queries and DBSCAN clustering for radius-based buyer-farmer matching in under 150 ms. Built an automated Prophet time-series pipeline analysing historical trends across 10+ staple crops to generate 7- to 30-day price projections. Integrated end-to-end M-Pesa STK Push with async C2B/B2C callback webhooks for fully automated payment reconciliation.</dd>
+        </dl>
+        <div class="tags"><span class="tag">FastAPI</span><span class="tag">PostGIS</span><span class="tag">DBSCAN</span><span class="tag">Prophet</span><span class="tag">M-Pesa</span><span class="tag">Docker</span><span class="tag">AWS EC2</span><span class="tag">S3</span><span class="tag">Nginx</span><span class="tag">Flutter</span></div>
+      </div>
+    </article>
+
+    <article class="case rv" style="--c:var(--blue)">
+      <div>
+        <h3>Performance: admin dashboard query optimisation</h3>
+        <div class="metric">Query timeouts cut from 15 s to under <span class="count" data-from="15">2</span> s<small>Admin dashboard database queries</small></div>
+      </div>
+      <div>
+        <figure class="terminal" data-tilt>
+          <div class="term-bar"><span></span><span></span><span></span></div>
+          <pre><code><span class="r">-- Before</span>
+SELECT * FROM reports
+  JOIN users ON ...  <span class="r">⏱ 15,230 ms</span>
+
+<span class="b">-- After: index + query rewrite</span>
+<span class="g">+ CREATE INDEX idx_reports_date_user</span>
+<span class="g">+ Rewrite → CTE + pagination</span>
+  Query time:       <span class="g">1,840 ms  ✓</span></code></pre>
+        </figure>
+        <dl>
+          <dt>Problem</dt><dd>Dashboard queries were timing out at around 15 seconds, blocking admin workflows.</dd>
+          <dt>Approach</dt><dd>Analysed execution plans to pinpoint full-table scans and missing indexes, then added targeted composite indexes, refactored the heaviest joins and introduced server-side pagination.</dd>
+          <dt>Result</dt><dd>Queries now return in under 2 seconds — an 87% reduction in response time.</dd>
+        </dl>
+        <div class="tags"><span class="tag">C#</span><span class="tag">.NET Core</span><span class="tag">SQL</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <div class="wrap">
+    <h2 class="rv">Skills</h2>
+    <p class="lede rv" style="--d:.08s">Grouped by the kind of problem I use them for.</p>
+    <div class="matrix">
+      <div class="rv" style="--c:var(--blue)"><h3>Mobile</h3><div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Kotlin</span><span class="chip">Offline-first sync</span><span class="chip">SQLite</span></div></div>
+      <div class="rv" style="--c:var(--red)"><h3>Backend and APIs</h3><div class="chips"><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">C#/.NET Core</span><span class="chip">Go</span><span class="chip">GraphQL</span><span class="chip">REST</span></div></div>
+      <div class="rv" style="--c:var(--teal)"><h3>Data</h3><div class="chips"><span class="chip">PostgreSQL</span><span class="chip">PostGIS</span><span class="chip">SQL</span><span class="chip">Query tuning</span><span class="chip">Prophet</span></div></div>
+      <div class="rv" style="--c:var(--amber)"><h3>Cloud</h3><div class="chips"><span class="chip">AWS EC2</span><span class="chip">S3</span><span class="chip">IAM</span></div></div>
+      <div class="rv" style="--c:var(--blue)"><h3>Systems and DevOps</h3><div class="chips"><span class="chip">Linux</span><span class="chip">Bash</span><span class="chip">Docker</span><span class="chip">Nginx</span><span class="chip">Git</span><span class="chip">GitHub Actions</span></div></div>
+      <div class="rv" style="--c:var(--red)"><h3>Web</h3><div class="chips"><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <h2 class="rv">About</h2>
+    <div class="cols">
+      <div class="rv" style="--d:.08s">
+        <p>I started with a Computer Science degree at the University of Nairobi and moved quickly into production work: first L3 support on .NET systems at the Judiciary's ICT directorate, now building a healthcare app at Rastuc Technologies.</p>
+        <p>That mix taught me to care about the unglamorous parts of software: data integrity when networks fail, queries that stay fast as tables grow, and deployments that someone else can reproduce.</p>
+        <p>Next, I want to go deeper into systems research and computational biology, where reliable software and large-scale data meet. I'm exploring graduate programmes in that space, including ETH Zurich.</p>
+      </div>
+      <div class="edu rv" style="--d:.16s">
+        <div style="--c:var(--blue)"><h3>BSc Computer Science</h3><p>University of Nairobi, 2022–2026<br>Second Class Honours (Upper)</p></div>
+        <div style="--c:var(--red)"><h3>Software Engineer Intern</h3><p>Judiciary Directorate of ICT, Jul–Oct 2025</p></div>
+        <div style="--c:var(--teal)"><h3>Software Engineer</h3><p>Rastuc Technologies, since Nov 2025</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wm" aria-hidden="true">WK</div>
+  <div class="wrap">
+    <div id="contact" class="f-cta rv">
+      <h2>Have a role or a project in mind?</h2>
+      <div>
+        <a class="btn primary" data-mag href="mailto:kathanzuwayne2@gmail.com">Email me</a>
+        <a class="btn" data-mag href="/Wayne_Kathanzu_CV.pdf" download>Download resume</a>
+      </div>
+    </div>
+    <div class="f-grid rv">
+      <div>
+        <div class="f-brand"><span>WK</span>Wayne Kathanzu</div>
+        <p>Full-stack software engineer building mobile apps, web apps and AWS-hosted backends. Based in Nairobi, Kenya.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul><li><a href="#work">Work</a></li><li><a href="#skills">Skills</a></li><li><a href="#about">About</a></li></ul>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <ul><li><a href="https://github.com/kimmis254" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://www.linkedin.com/in/wayne-kathanzu" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="mailto:kathanzuwayne2@gmail.com">kathanzuwayne2@gmail.com</a></li></ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr"></span> Wayne Kathanzu. All rights reserved.</span>
+      <a class="top" href="#top" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
